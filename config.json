@@ -1,9 +1,9 @@
 {
     "development": {
-        "username": process.env.root,
-        "password": process.env.Hazard0us,
-        "database": process.env.ecommerce_db,
-        "host": process.env.DB_HOST,
+        "username": "root",
+        "password": "al3mftxog5qhkv5v",
+        "database": "ecommerce_db",
+        "host": "127.0.0.1",
         "dialect": "mysql"
     },
     "test": {
@@ -14,10 +14,7 @@
         "dialect": "mysql"
     },
     "production": {
-        "username": "root",
-        "password": null,
-        "database": "database_production",
-        "host": "127.0.0.1",
+        "use_env_variable": "JAWSDB_URL",
         "dialect": "mysql"
     }
-    };
+    }
